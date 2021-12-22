@@ -5,7 +5,6 @@ from .forms import PostForm, UserRegisterForm, ComentarioForm
 from django.contrib import messages
 from django.contrib.auth.models import User
 
-# Create your views here.
 def index(request):
     posts = Post.objects.all()
     context = {'posts':posts}
